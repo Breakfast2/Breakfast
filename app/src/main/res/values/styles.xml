@@ -10,9 +10,9 @@
 
     <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/blue_92C5FA</item>
+        <item name="colorPrimaryDark">@color/blue_92C5FA</item>
+        <item name="colorAccent">@color/blue_92C5FA</item>
         <item name="android:statusBarColor">@color/colorTransparent</item>
     </style>
 </resources>

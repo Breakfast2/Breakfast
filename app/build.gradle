@@ -39,6 +39,12 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
 
+    //baseQuickAdapter
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
 
+    //room資料庫
+    annotationProcessor 'androidx.room:room-compiler:2.2.3'
+
+    //流式布局
+    implementation 'com.google.android:flexbox:2.0.0'
 }

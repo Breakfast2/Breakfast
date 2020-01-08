@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background_border"
-    android:layout_marginTop="3dp"
-    android:layout_marginStart="3dp">
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="4dp">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中西式早餐"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/tv_FoodName"
@@ -19,7 +36,8 @@
         android:text="漢堡"
         android:textColor="@color/black_4D4D4D"
         android:textSize="14dp"
+        android:padding="10dp"
         android:gravity="center"
-        android:layout_margin="10dp"/>
+        android:background="@drawable/background_border" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
