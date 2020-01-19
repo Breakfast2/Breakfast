@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
                 detailAdapter.notifyDataSetChanged()
                 totalMoney = 0
                 tvTotalMoney.text = "總額 : $totalMoney 元"
+                initAdapter()
             }
         })
     }
