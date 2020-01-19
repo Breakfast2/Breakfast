@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
         tvNext2!!.setOnClickListener(object : CustomerClickListener() {
             override fun onOneClick() {
                 toast("你又點到我拉")
+                foodItemList.clear()
+                detailAdapter.notifyDataSetChanged()
+                totalMoney = 0
+                tvTotalMoney.text = "總額 : $totalMoney 元"
             }
         })
     }
